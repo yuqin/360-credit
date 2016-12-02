@@ -19,7 +19,7 @@
 # xxx_data_learning 用于研究数据集, 各自管各自的
 # meta_data 用于存放数据集信息
 # preprocess 用于数据处理、标准化、归一化等清洗转换工作
-# model_search 用于研究模型的优劣
+# model_research 用于研究模型的优劣
 # xxx_report 用于撰写个人的研究报告, 各自管各自的, 最后的报告用jupyter notebook记录
 # helpers 用于存放公用的函数
 
