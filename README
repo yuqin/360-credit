@@ -1,0 +1,38 @@
+# 开始项目前, 请先阅读我
+
+# 步骤
+# 第一步: 下载代码
+# 执行命令 git clone https://github.com/zheshishenmequn/360-credit.git
+# 或者用sourcetree去下载
+
+# 第二步: 安装项目需要的第三方包
+# 切换到 requirements 所在的文件夹, 执行命令 pip install -r requirements
+
+# 第三步: 仔细阅读每个py文件的文档内容(第三行起)
+
+# 第四步: 仔细阅读注意事项
+
+# 第五步: 把数据放到对应的文件夹下, 开工吧!
+
+# 注意事项
+# 第一点: 注意程序的模块分类
+# xxx_data_learning 用于研究数据集, 各自管各自的
+# meta_data 用于存放数据集信息
+# preprocess 用于数据处理、标准化、归一化等清洗转换工作
+# model_search 用于研究模型的优劣
+# xxx_report 用于撰写个人的研究报告, 各自管各自的, 最后的报告用jupyter notebook记录
+# helpers 用于存放公用的函数
+
+# 第二点: 注意编码规范
+# 严格按照 PEP-8 标准进行编码, 项目代码中不能出现让pycharm有黄色波浪线的代码
+# PEP-8 原文: https://www.python.org/dev/peps/pep-0008/
+# PEP-8 中文: http://blog.csdn.net/robinzhou/article/details/6991078
+
+# 第三点: 用git管理代码
+# 开始工作前先下载代码
+# 有更新及时上传, 憋着不传会给其他伙伴造成严重困扰
+# 有文件冲突, 沟通后再进行合并
+
+# 第四点: 多写注释
+
+# 第五点: 代码的可读性要高, 代码量要精简
