@@ -14,7 +14,7 @@ for table in tables:
     except:
         print "\n" + "-" * 100
         print table
-        print traceback.print_exc()
+        traceback.print_exc()
         print "-" * 100 + "\n"
         continue
 
