@@ -31,7 +31,7 @@ class BaseETL(object):
     @abstractmethod
     def transform(self):
         """
-        数据转换层、筛选、差值、标准化等操作
+        数据转换层、筛选、插值、标准化等操作
         :return:
         """
         pass
