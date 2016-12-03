@@ -12,7 +12,9 @@ from os.path import join
 from os import listdir, getcwd
 
 
-header = dict(
+TABLES = filter(lambda x: ".txt" in x, listdir(join(getcwd(), "train")) + listdir(join(getcwd(), "test")))
+
+HEADERS = dict(
     bank_detail_train=["用户id", "时间戳", "交易类型", "交易金额", "工资收入标记"],
     bank_detail_test=["用户id", "时间戳", "交易类型", "交易金额", "工资收入标记"],
     bill_detail_train=[
@@ -33,5 +35,9 @@ header = dict(
     usersID_test=["用户id"],
 )
 
+COLUMNS = {
+    "交易类型": {0: "收入", 1: "支出"},
+    "工资收入标记": {0: "其他收入", 1: "工资收入"},
+}
 
-tables = filter(lambda x: ".txt" in x, listdir(join(getcwd(), "train")) + listdir(join(getcwd(), "test")))
+ENCODING = "utf8"
