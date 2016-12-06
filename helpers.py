@@ -7,6 +7,7 @@ from os.path import join, splitext
 from meta_data import HEADERS, ENCODING, COLUMNS
 from datetime import datetime
 import pandas
+import time
 import os
 
 
@@ -87,3 +88,21 @@ def get_column_meaning(column_name):
         return translated_column_value
 
     return translate_meaning
+
+
+def time_elapsed(function):
+    """
+    计算函数调用CPU时钟的decorator, 单位是秒
+    例:
+    @time_elapsed
+    def foo():
+        return [i for i in xrange(100000)]
+    :param function:
+    :return:
+    """
+    def wrapper(*args, **kwargs):
+        start = time.clock()
+        function(*args, **kwargs)
+        end = time.clock()
+        print "ELAPSE: function '{0}' elapse {1} seconds".format(function.__name__, end - start)
+    return wrapper
