@@ -26,17 +26,17 @@ def read_data_set(file_name, cleaned=False):
     return df
 
 
-def unixtime_to_datetime(time):
+def unixtime_to_datetime(unix_time):
     """
     将数据集中unixtime的时间类型转换成python的datetime类型
-    :param time: int / long / str  "5894321388"
+    :param unix_time: int / long / str  "5894321388"
     :return: datetime
     """
     try:
-        time = int(time)
-        return datetime.fromtimestamp(time).strftime("%Y-%m-%d %H:%M:%S")
+        unix_time = int(unix_time)
+        return datetime.fromtimestamp(unix_time).strftime("%Y-%m-%d %H:%M:%S")
     except ValueError:
-        return time
+        return unix_time
 
 
 def get_file_path(file_name, cleaned=False):
